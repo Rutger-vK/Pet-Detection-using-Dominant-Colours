@@ -49,9 +49,6 @@ def remove_background(img):
 		for cnt in contours:
 			cv2.fillPoly(roi, [cnt], (255, 255, 255))
 
-	# cv2.imshow("roi", roi)
-	# cv2.waitKey(0)
-
 	lower = np.array([0, 0, 0])
 	upper = np.array([5, 5, 5])
 
